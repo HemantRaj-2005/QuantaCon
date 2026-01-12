@@ -4,6 +4,7 @@ import { EventCard } from "@/components/event-card";
 import { CoordinatorCard } from "@/components/coordinator-card";
 import { Separator } from "@/components/ui/separator";
 import { Cpu, Globe } from "lucide-react";
+import About from "@/components/About";
 
 export default function Home() {
   const professors = [
@@ -97,51 +98,8 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground selection:bg-dune-spice selection:text-white transition-colors duration-300">
       <Navbar />
       <HeroSection />
+      <About/>
 
-      {/* Events Section */}
-      <section
-        id="events"
-        className="py-24 px-4 md:px-8 max-w-7xl mx-auto relative z-10"
-      >
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-dune-sand">
-            The Challenges of Arrakis
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Choose your path. Will you maximize hardware efficiency or weave the
-            digital web?
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          <EventCard
-            title="AVALANCHE"
-            description="The ultimate hardware hackathon. Optimize circuits, minimize latency, and survive the heat."
-            features={[
-              "Circuit Design Challenges",
-              "Microcontroller Programming",
-              "Signal Processing Tasks",
-              "Real-time Debugging",
-            ]}
-            internalLink="/avalanche"
-            icon={Cpu}
-            variant="spice"
-          />
-          <EventCard
-            title="WEBSPRINT"
-            description="A race against time to build the most responsive and beautiful web interfaces."
-            features={[
-              "Frontend Development",
-              "UI/UX Design Implementation",
-              "API Integration",
-              "Performance Optimization",
-            ]}
-            internalLink="/websprint"
-            icon={Globe}
-            variant="space"
-          />
-        </div>
-      </section>
 
       <Separator className="bg-dune-sand/10 max-w-7xl mx-auto" />
 
