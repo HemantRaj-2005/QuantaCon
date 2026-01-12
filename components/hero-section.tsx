@@ -9,29 +9,6 @@ export function HeroSection() {
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const y2 = useTransform(scrollY, [0, 500], [0, -150]);
 
-  const [particles, setParticles] = React.useState<
-    {
-      x: number;
-      y: number;
-      scale: number;
-      duration: number;
-      size: number;
-      targetY: number;
-    }[]
-  >([]);
-
-  React.useEffect(() => {
-    const newParticles = Array.from({ length: 40 }).map(() => ({
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      scale: Math.random() * 0.5 + 0.5,
-      duration: Math.random() * 10 + 10,
-      size: Math.random() * 4 + 2,
-      targetY: Math.random() * -100,
-    }));
-    setParticles(newParticles);
-  }, []);
-
   return (
     <div className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-background text-foreground transition-colors duration-500">
       {/* Background Gradients */}
@@ -40,34 +17,6 @@ export function HeroSection() {
 
       {/* Light Mode: Day Desert Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-amber-100 via-orange-50 to-white dark:opacity-0 opacity-100 transition-opacity duration-500" />
-
-      {/* Sand Particles Animation */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {particles.map((p, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-dune-sand dark:bg-dune-sand/30 blur-[1px]"
-            initial={{
-              left: `${p.x}%`,
-              top: `${p.y}%`,
-              scale: p.scale,
-            }}
-            animate={{
-              top: [null, `${p.targetY}%`],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: p.duration,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-            style={{
-              width: `${p.size}px`,
-              height: `${p.size}px`,
-            }}
-          />
-        ))}
-      </div>
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 space-y-8">
