@@ -139,7 +139,7 @@
   },
   {
     "id": "ws-7",
-    "title": "WebSprint Protocol 7: Survive the Desert. Train Like a Fremen",
+    "title": "WebSprint Protocol 7: PocketFit Coach",
     "description": "In the harsh desert world of Arrakis from the Dune universe, survival is not about excess but about discipline, balance, and adaptation. The Fremen survive extreme conditions by training their bodies intelligently—never wasting energy, never overexerting, and always adapting to their environment. Modern fitness applications, however, are overwhelming and unrealistic for beginners. They assume unlimited motivation, equipment, and time. PocketFit Coach reimagines fitness through the philosophy of Dune by offering minimal, adaptive, and achievable workout routines that align with a user's real-life constraints.",
     "objective": "Build an **adaptive fitness coaching application** that creates personalized, achievable workout plans based on user constraints, tracks progress minimally, and motivates through consistency rather than intensity.",
     "basicFeatures": [

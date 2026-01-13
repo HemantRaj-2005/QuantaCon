@@ -99,7 +99,7 @@ export default function Home() {
       image: "/images/coordinators/shudhanshu.jpeg",
     },
     {
-      name: "Risabh Saxena",
+      name: "Rishabh Saxena",
       role: "Pre-final year coordinator",
       instagramLink: "#",
       linkedinLink: "https://www.linkedin.com/in/rishabhsaxena4136",
