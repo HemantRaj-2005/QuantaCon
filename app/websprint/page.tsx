@@ -191,7 +191,7 @@ export default function WebsprintPage() {
 
           {/* Sidebar Info - 1/3 width */}
           <div className="space-y-8">
-            <div className="p-8 rounded-2xl border-2 border-blue-500/30 bg-gradient-to-b from-blue-500/10 to-background shadow-xl sticky top-24">
+            <div className="p-8 rounded-2xl border-2 border-blue-500/30 bg-linear-to-b from-blue-500/10 to-background shadow-xl sticky top-24">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold flex items-center gap-3">
                   <Zap className="w-6 h-6 text-blue-500" />

@@ -10,7 +10,6 @@ import {
 import {
   Cpu,
   ArrowRight,
-  ShieldCheck,
   Timer,
   AlertTriangle,
   Users,
@@ -54,7 +53,7 @@ const parseBoldText = (text: string) => {
 
 export default function AvalanchePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-gray-900 text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-linear-to-b from-background to-gray-900 text-foreground transition-colors duration-300">
       <Navbar />
 
       {/* Hero Banner */}
@@ -115,11 +114,11 @@ export default function AvalanchePage() {
                   <AccordionItem
                     key={ps.id}
                     value={ps.id}
-                    className="border-2 border-dune-spice/30 rounded-xl bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl shadow-dune-spice/5 overflow-hidden"
+                    className="border-2 border-dune-spice/30 rounded-xl bg-linear-to-br from-gray-900 to-gray-950 shadow-xl shadow-dune-spice/5 overflow-hidden"
                   >
                     <AccordionTrigger className="text-xl font-bold hover:text-dune-spice transition-colors text-left px-6 py-5 hover:bg-dune-spice/5">
                       <div className="flex items-start gap-4 w-full">
-                        <div className="bg-dune-spice/10 text-dune-spice font-mono rounded-lg px-3 py-1 text-sm flex-shrink-0">
+                        <div className="bg-dune-spice/10 text-dune-spice font-mono rounded-lg px-3 py-1 text-sm shrink-0">
                           {ps.id.toUpperCase()}
                         </div>
                         <div className="flex-1 text-left">
@@ -229,7 +228,7 @@ export default function AvalanchePage() {
 
           {/* Sidebar Info - 1/3 width */}
           <div className="space-y-8">
-            <div className="p-8 rounded-2xl border-2 border-dune-spice/30 bg-gradient-to-b from-dune-spice/10 to-gray-900 shadow-xl sticky top-24">
+            <div className="p-8 rounded-2xl border-2 border-dune-spice/30 bg-linear-to-b from-dune-spice/10 to-gray-900 shadow-xl sticky top-24">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold flex items-center gap-3">
                   <Timer className="w-6 h-6 text-dune-spice" />
@@ -262,7 +261,7 @@ export default function AvalanchePage() {
                   </div>
                 </div>
 
-                <div className="h-px bg-gradient-to-r from-transparent via-dune-spice/30 to-transparent" />
+                <div className="h-px bg-linear-to-r from-transparent via-dune-spice/30 to-transparent" />
 
                 <div className="space-y-6">
                   <div>
@@ -292,7 +291,7 @@ export default function AvalanchePage() {
                   </Button>
 
                   <Button
-                    className="w-full bg-gradient-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"
+                    className="w-full bg-linear-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"
                     size="lg"
                     asChild
                   >

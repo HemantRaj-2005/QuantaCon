@@ -1,9 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
-import { EventCard } from "@/components/event-card";
 import { CoordinatorCard } from "@/components/coordinator-card";
 import { Separator } from "@/components/ui/separator";
-import { Cpu, Globe } from "lucide-react";
 import About from "@/components/About";
 
 export default function Home() {

@@ -3,7 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
