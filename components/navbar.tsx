@@ -3,7 +3,6 @@
 import * as React from "react";
 import Link from "next/link";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -19,7 +18,7 @@ export function Navbar() {
 
   const navItems = [
     { href: "/#events", label: "Events" },
-    { href: "/#mentors", label: "Mentors" },
+    { href: "/#pre-final", label: "Mentors" },
     { href: "/avalanche", label: "Avalanche" },
     { href: "/websprint", label: "WebSprint" },
     { href: "/timeline", label: "Timeline" },
