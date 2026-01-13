@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/accordion";
 import {
   ArrowRight,
-  Layout,
   Zap,
   AlertTriangle,
   Clock,
@@ -187,8 +186,6 @@ export default function WebsprintPage() {
                 ))}
               </Accordion>
             </section>
-
-            {/* Rules & Judging - Now with better spacing */}
            
           </div>
 

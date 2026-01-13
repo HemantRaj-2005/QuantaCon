@@ -38,59 +38,59 @@ export default function Home() {
   const preFinalCoordinators = [
     {
       name: "Hemant Raj",
-      role: "Pre-Final Year Coordinator of Web Sprint",
+      role: "Pre-Final Year Coordinator",
       instagramLink: "https://www.instagram.com/too_lazy_to_raj",
       linkedinLink: "https://www.linkedin.com/in/hemantraj-mnnit/",
-      image: "/images/coordinators/HemantRaj.jpg",
+      image: "/images/coordinators/HemantRaj.jpg", 
     },
     {
-      name: "Stilgar",
-      role: "Hardware Sietch Leader",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", // Will show User icon
+      name: "Harsh Singhal",
+      role: "Pre-Final Year Coordinator",
+      instagramLink: "https://www.instagram.com/the.harsh.singhal/harsh1611/",
+      linkedinLink: "https://www.linkedin.com/in/singhalharsh1611/",
+      image: "/images/coordinators/HarshSinghal.jpeg", 
     },
     {
       name: "Gurney Halleck",
       role: "Backend Warmaster",
       instagramLink: "#",
       linkedinLink: "#",
-      image: "", // Will show User icon
+      image: "", 
     },
     {
       name: "Lady Jessica",
       role: "Reverend Mother of UX",
       instagramLink: "#",
       linkedinLink: "#",
-      image: "", // Will show User icon
+      image: "",  
     },
     {
       name: "Thufir Hawat",
       role: "Master of Computation",
       instagramLink: "#",
       linkedinLink: "#",
-      image: "", // Will show User icon
+      image: "", 
     },
     {
       name: "Liet Kynes",
       role: "Planetologist of Data",
       instagramLink: "#",
       linkedinLink: "#",
-      image: "", // Will show User icon
+      image: "", 
     },
     {
       name: "Alia Atreides",
       role: "Saint of Syntax",
       instagramLink: "#",
       linkedinLink: "#",
-      image: "", // Will show User icon
+      image: "", 
     },
     {
-      name: "Shadout Mapes",
-      role: "Keeper of the Code",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", // Will show User icon
+      name: "Akash Singh",
+      role: "Pre-final year coordinator",
+      instagramLink: "https://www.instagram.com/singh_akash_/",
+      linkedinLink: "https://www.linkedin.com/in/akash-singh-7bba5a298/",
+      image: "/images/coordinators/AkashSingh.jpeg", 
     },
   ];
 
@@ -199,14 +199,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center gap-6 text-sm text-muted-foreground/80">
-            <a href="#" className="hover:text-dune-sand transition-colors">
+            <a href="https://www.instagram.com/electronics_society_mnnit" className="hover:text-dune-sand transition-colors">
               Instagram
             </a>
-            <a href="#" className="hover:text-dune-sand transition-colors">
+            <a href="https://www.linkedin.com/company/mnnit-electronics-society#" className="hover:text-dune-sand transition-colors">
               LinkedIn
             </a>
             <a
-              href="https://electronics-society.com"
+              href="#"
               target="_blank"
               className="hover:text-dune-sand transition-colors"
             >
