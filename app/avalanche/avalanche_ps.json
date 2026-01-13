@@ -1,0 +1,30 @@
+[
+  {
+    "id": "av-1",
+    "title": "Avalanche Protocol 1: Miller's Equilibrium",
+    "description": "Participants are required to design and simulate a two-stage CMOS Operational Amplifier using Miller compensation in Cadence Virtuoso. The task focuses on understanding and controlling stability in deep submicron analog design. Starting from transistor-level schematic design, teams must carefully select device dimensions, biasing strategies, and compensation techniques to achieve a stable, high-performance amplifier. Key performance metrics such as DC gain, unity-gain bandwidth, phase margin, slew rate, power consumption, and output swing must be analyzed. Non-idealities such as parasitic capacitances and process limitations should be considered during design. Just as navigating dunes requires foresight, analog designers must anticipate trade-offs between speed, gain, and stability.",
+    "objective": "To develop a deep conceptual and practical understanding of Miller compensation, frequency response, and stability analysis in operational amplifier design using industry-standard EDA tools.",
+    "eligibility": "ECE – 2nd Year ONLY"
+  },
+  {
+    "id": "av-2",
+    "title": "Avalanche Protocol 2: The Serial Caravan",
+    "description": "Design a complete UART Transmitter and Receiver system using Verilog HDL. The system must include a baud rate generator, framing logic for start and stop bits, optional parity generation and checking, and robust synchronization between transmitter and receiver. Participants are required to develop a comprehensive testbench to verify correct transmission and reception under different conditions. Waveform analysis should demonstrate proper timing, sampling, and error-free communication. This project emphasizes FSM design, timing accuracy, and verification methodology—core skills in digital hardware engineering.",
+    "objective": "To gain hands-on experience in serial communication protocols, FSM-based design, and testbench-driven verification.",
+    "eligibility": "1st & 2nd Year"
+  },
+  {
+    "id": "av-3",
+    "title": "Avalanche Protocol 3: Echoes of the Spectrum",
+    "description": "Design and implement either a Fixed-Point FFT or FIR Filter using Verilog HDL. The design must strictly use fixed-point arithmetic, requiring careful scaling, truncation, and overflow handling. Participants must introduce pipelining to improve throughput and clock frequency, demonstrating an understanding of performance-oriented hardware design. The project should include a clear architectural breakdown, showing how pipelining stages are introduced and how data flows across them. Simulation results must be used to compare latency, throughput, and hardware resource utilization (registers, adders, multipliers). This problem emphasizes real-world digital signal processing trade-offs, where higher speed often comes at the cost of area and complexity.",
+    "objective": "To understand DSP hardware implementation using Verilog, focusing on pipelining, fixed-point effects, and performance-resource trade-offs.",
+    "eligibility": "1st & 2nd Year"
+  },
+  {
+    "id": "av-4",
+    "title": "Avalanche Protocol 4: The Scheduler's Path",
+    "description": "Develop a Mini Operating System Scheduler using the C programming language. The program must implement three classic CPU scheduling algorithms: First Come First Serve (FCFS), Shortest Job First (SJF), and Round Robin. User input should allow flexible definition of process arrival times, burst times, and time quantum. The scheduler must generate a clear Gantt chart in the terminal to visualize execution order. Additionally, calculate and compare performance metrics such as waiting time, turnaround time, and average response time. A brief time-complexity analysis of each algorithm should be included to highlight trade-offs between simplicity and efficiency.",
+    "objective": "To strengthen understanding of core operating system concepts, algorithmic thinking, and performance analysis using C.",
+    "eligibility": "1st & 2nd Year"
+  }
+]

@@ -13,191 +13,288 @@ import {
   ShieldCheck,
   Timer,
   AlertTriangle,
+  Users,
+  Zap,
+  CircuitBoard,
+  FileCode,
+  Waves,
+  Cog,
+  Target,
 } from "lucide-react";
 import Link from "next/link";
 
-const PROBLEM_STATEMENTS = Array.from({ length: 10 }).map((_, i) => ({
-  id: `ps-${i + 1}`,
-  title: `Avalanche Protocol ${i + 1}: ${
-    [
-      "Signal Degredation",
-      "Power Failure",
-      "Sandstorm Navigation",
-      "Water Reclamation",
-      "Shield Generator",
-      "Spice Harvester Control",
-      "Ornithopter Stabilization",
-      "Stillsuit Telemetry",
-      "Seismic Monitor",
-      "Communication Relay",
-    ][i]
-  }`,
-  description:
-    "A critical system failure has occurred. Your engineering team must design a hardware solution to restore functionality before critical failure.",
-  basicFeatures: [
-    "Microcontroller interfacing (ESP32/Arduino)",
-    "Sensor data acquisition",
-    "Basic LED status indication",
-  ],
-  advancedFeatures: [
-    "Wireless telemetry (WiFi/LoRa)",
-    "Power efficiency optimization (<100mA)",
-    "Fail-safe redundancy mechanisms",
-  ],
-}));
+// Import the JSON data
+import PROBLEM_STATEMENTS from "./avalanche_ps.json";
+
+interface ProblemStatement {
+  id: string;
+  title: string;
+  description: string;
+  objective: string;
+  eligibility: string;
+}
+
+const problemStatements = PROBLEM_STATEMENTS as ProblemStatement[];
+
+// Helper function to parse bold text
+const parseBoldText = (text: string) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <span key={index} className="font-bold text-dune-spice">
+          {part.slice(2, -2)}
+        </span>
+      );
+    }
+    return part;
+  });
+};
 
 export default function AvalanchePage() {
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-b from-background to-gray-900 text-foreground transition-colors duration-300">
       <Navbar />
 
       {/* Hero Banner */}
       <div className="relative pt-32 pb-20 px-4 md:px-8 mt-16 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-dune-spice via-background to-background" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center space-y-6">
+        <div className="absolute inset-0 z-0 opacity-15 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-dune-spice via-gray-900 to-background" />
+        <div className="max-w-6xl mx-auto relative z-10 text-center space-y-8">
           <Badge
             variant="outline"
-            className="border-dune-spice/50 text-dune-spice px-4 py-1"
+            className="border-dune-spice/50 text-dune-spice px-6 py-2 text-base backdrop-blur-sm"
           >
-            Hardware Division
+            <CircuitBoard className="w-4 h-4 mr-2" />
+            Hardware & Core Division
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-dune-spice/90 drop-shadow-sm">
+          <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-dune-spice drop-shadow-lg">
             AVALANCHE
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl text-muted-foreground font-light max-w-3xl mx-auto italic">
             &quot;The heat of the desert destroys the weak. Only the most
             efficient circuits survive.&quot;
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <Badge className="bg-dune-spice/20 text-dune-spice border-dune-spice/30">
+              <Cpu className="w-3 h-3 mr-1" /> Analog Design
+            </Badge>
+            <Badge className="bg-dune-spice/20 text-dune-spice border-dune-spice/30">
+              <FileCode className="w-3 h-3 mr-1" /> Verilog HDL
+            </Badge>
+            <Badge className="bg-dune-spice/20 text-dune-spice border-dune-spice/30">
+              <Waves className="w-3 h-3 mr-1" /> Signal Processing
+            </Badge>
+            <Badge className="bg-dune-spice/20 text-dune-spice border-dune-spice/30">
+              <Cog className="w-3 h-3 mr-1" /> C Programming
+            </Badge>
+          </div>
         </div>
       </div>
 
       {/* Content Grid */}
-      <div className="max-w-6xl mx-auto px-4 md:px-8 pb-24 grid lg:grid-cols-[2fr_1fr] gap-12">
-        <div className="space-y-12">
-          {/* Problem Statements Accordion */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold flex items-center gap-3">
-              <AlertTriangle className="text-dune-spice" />
-              Active Hardware Protocols
-            </h2>
-            <p className="text-muted-foreground">
-              Select a protocol to view detailed mission parameters.
-            </p>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pb-24">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Main Content - 2/3 width */}
+          <div className="lg:col-span-2 space-y-12">
+            {/* Problem Statements Accordion */}
+            <section className="space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-bold flex items-center gap-3">
+                  <AlertTriangle className="text-dune-spice w-8 h-8" />
+                  Active Hardware Protocols
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Select a protocol to view detailed mission parameters and
+                  technical specifications.
+                </p>
+              </div>
 
-            <Accordion type="single" collapsible className="w-full space-y-4">
-              {PROBLEM_STATEMENTS.map((ps) => (
-                <AccordionItem
-                  key={ps.id}
-                  value={ps.id}
-                  className="border border-dune-spice/20 rounded-lg bg-card/50 px-4"
-                >
-                  <AccordionTrigger className="text-lg font-semibold hover:text-dune-spice transition-colors">
-                    {ps.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="pt-4 pb-6 space-y-6">
-                    <p className="text-muted-foreground">{ps.description}</p>
+              <Accordion type="single" collapsible className="w-full space-y-6">
+                {problemStatements.map((ps) => (
+                  <AccordionItem
+                    key={ps.id}
+                    value={ps.id}
+                    className="border-2 border-dune-spice/30 rounded-xl bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl shadow-dune-spice/5 overflow-hidden"
+                  >
+                    <AccordionTrigger className="text-xl font-bold hover:text-dune-spice transition-colors text-left px-6 py-5 hover:bg-dune-spice/5">
+                      <div className="flex items-start gap-4 w-full">
+                        <div className="bg-dune-spice/10 text-dune-spice font-mono rounded-lg px-3 py-1 text-sm flex-shrink-0">
+                          {ps.id.toUpperCase()}
+                        </div>
+                        <div className="flex-1 text-left">
+                          <span>{ps.title}</span>
+                          <div className="mt-1">
+                            <Badge
+                              variant="outline"
+                              className="text-xs border-dune-spice/30 text-dune-spice/80"
+                            >
+                              {ps.eligibility}
+                            </Badge>
+                          </div>
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-8 space-y-8">
+                      {/* Description */}
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-2">
+                          <Target className="w-5 h-5 text-dune-spice" />
+                          <h3 className="font-semibold text-lg">
+                            Mission Brief
+                          </h3>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed text-base">
+                          {parseBoldText(ps.description)}
+                        </p>
+                      </div>
 
-                    <div className="grid sm:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-dune-spice text-sm uppercase tracking-wide">
-                          Basic Features
-                        </h4>
-                        <ul className="list-disc pl-4 space-y-1 text-sm text-muted-foreground">
-                          {ps.basicFeatures.map((f, i) => (
-                            <li key={i}>{f}</li>
-                          ))}
-                        </ul>
+                      {/* Objective */}
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-2">
+                          <Zap className="w-5 h-5 text-dune-spice" />
+                          <h3 className="font-semibold text-lg">
+                            Primary Objective
+                          </h3>
+                        </div>
+                        <div className="bg-dune-spice/5 border border-dune-spice/20 rounded-lg p-4">
+                          <p className="text-foreground leading-relaxed font-medium">
+                            {parseBoldText(ps.objective)}
+                          </p>
+                        </div>
                       </div>
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-dune-spice text-sm uppercase tracking-wide">
-                          Advanced Features
-                        </h4>
-                        <ul className="list-disc pl-4 space-y-1 text-sm text-muted-foreground">
-                          {ps.advancedFeatures.map((f, i) => (
-                            <li key={i}>{f}</li>
-                          ))}
-                        </ul>
+
+                      {/* Technology Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {ps.title.includes("Miller") && (
+                          <>
+                            <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+                              Cadence Virtuoso
+                            </Badge>
+                            <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+                              CMOS Design
+                            </Badge>
+                            <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30">
+                              Analog Simulation
+                            </Badge>
+                          </>
+                        )}
+                        {ps.title.includes("Serial") && (
+                          <>
+                            <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                              Verilog HDL
+                            </Badge>
+                            <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                              UART Protocol
+                            </Badge>
+                            <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                              FSM Design
+                            </Badge>
+                          </>
+                        )}
+                        {ps.title.includes("Echoes") && (
+                          <>
+                            <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">
+                              DSP Hardware
+                            </Badge>
+                            <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">
+                              Fixed-Point
+                            </Badge>
+                            <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30">
+                              Pipelining
+                            </Badge>
+                          </>
+                        )}
+                        {ps.title.includes("Scheduler") && (
+                          <>
+                            <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30">
+                              C Programming
+                            </Badge>
+                            <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30">
+                              OS Concepts
+                            </Badge>
+                            <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30">
+                              Algorithms
+                            </Badge>
+                          </>
+                        )}
                       </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
+
+          </div>
+
+          {/* Sidebar Info - 1/3 width */}
+          <div className="space-y-8">
+            <div className="p-8 rounded-2xl border-2 border-dune-spice/30 bg-gradient-to-b from-dune-spice/10 to-gray-900 shadow-xl sticky top-24">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold flex items-center gap-3">
+                  <Timer className="w-6 h-6 text-dune-spice" />
+                  Timeline & Details
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-dune-spice/5 border border-dune-spice/20">
+                    <Timer className="w-5 h-5 text-dune-spice" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Duration</p>
+                      <p className="font-semibold">15th Jan - 29th Jan, 2026</p>
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </section>
+                  </div>
 
-          {/* Rules & Judging */}
-          <section className="space-y-6">
-            <h2 className="text-2xl font-bold flex items-center gap-3 text-dune-spice/80">
-              <ShieldCheck />
-              Judgement Criteria
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="p-4 rounded-lg border bg-card">
-                <h3 className="font-bold mb-2">Circuit Efficiency</h3>
-                <p className="text-sm text-muted-foreground">
-                  Cleanliness of wiring and optimal component usage.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg border bg-card">
-                <h3 className="font-bold mb-2">Code Logic</h3>
-                <p className="text-sm text-muted-foreground">
-                  Algorithms for sensor data processing and signal timing.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg border bg-card">
-                <h3 className="font-bold mb-2">Survival Features</h3>
-                <p className="text-sm text-muted-foreground">
-                  Bonus points for innovative power-saving modes.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg border bg-card">
-                <h3 className="font-bold mb-2">Demo Reliability</h3>
-                <p className="text-sm text-muted-foreground">
-                  System must work consistently under &quot;simulated
-                  stress&quot;.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-dune-spice/5 border border-dune-spice/20">
+                    <Users className="w-5 h-5 text-dune-spice" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Team Size</p>
+                      <p className="font-semibold">3-4 Members</p>
+                    </div>
+                  </div>
 
-        {/* Sidebar Info */}
-        <div className="space-y-8">
-          <div className="p-6 rounded-xl border border-dune-spice/20 bg-dune-spice/5 space-y-6 sticky top-24">
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Timer className="w-5 h-5 text-dune-spice" />
-                Timeline
-              </h3>
-              <ul className="space-y-3 text-sm">
-                <li className="flex justify-between">
-                  <span className="text-muted-foreground">Check-in</span>
-                  <span className="font-medium">15th Jan 2026</span>
-                </li>
-                <li className="flex justify-between">
-                  <span className="text-muted-foreground">Hacking Ends</span>
-                  <span className="font-medium">29th Jan 2026</span>
-                </li>
-                <li className="flex justify-between">
-                  <span className="text-muted-foreground">Team Size</span>
-                  <span className="font-medium">3-4 members</span>
-                </li>
-              </ul>
-            </div>
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-dune-spice/5 border border-dune-spice/20">
+                    <CircuitBoard className="w-5 h-5 text-dune-spice" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">Platform</p>
+                      <p className="font-semibold">Hardware/EDA/C</p>
+                    </div>
+                  </div>
+                </div>
 
-            <div className="h-px bg-dune-spice/20" />
+                <div className="h-px bg-gradient-to-r from-transparent via-dune-spice/30 to-transparent" />
 
-            <div className="space-y-4">
-              <h3 className="font-bold">Ready to deploy?</h3>
-              <Button
-                className="w-full bg-dune-spice hover:bg-dune-spice/90 text-white"
-                size="lg"
-                asChild
-              >
-                <Link href="https://forms.gle/11tghw9o4j6JvKKD6">
-                  Register Now <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </Button>
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">
+                      Ready to Engineer?
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Join the elite hardware engineers shaping the future of
+                      core systems.
+                    </p>
+                  </div>
+
+                  <Button
+                    className="w-full bg-gradient-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"
+                    size="lg"
+                    asChild
+                  >
+                    <Link
+                      href="https://forms.gle/11tghw9o4j6JvKKD6"
+                      target="_blank"
+                    >
+                      Register Now <ArrowRight className="ml-3 w-5 h-5" />
+                    </Link>
+                  </Button>
+
+                  <div className="text-center p-3 rounded-lg bg-dune-spice/10 border border-dune-spice/20">
+                    <p className="text-sm font-medium">
+                      ⏰ Registration closes:{" "}
+                      <span className="text-dune-spice">14th Jan, 2026</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

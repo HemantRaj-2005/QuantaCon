@@ -76,7 +76,6 @@ export function Navbar() {
               Electronics Society
             </Link>
           </Button>
-          <ModeToggle />
         </div>
       </div>
     </motion.header>

@@ -2,8 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -25,7 +24,7 @@ export function HeroSection() {
       />
 
       {/* ================= DARK OVERLAY ================= */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90 z-10" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black/90 z-10" />
 
       {/* ================= DUST GLOW ================= */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,190,120,0.15),transparent_60%)] z-10" />
@@ -67,10 +66,10 @@ export function HeroSection() {
             className="
               text-5xl sm:text-6xl md:text-7xl
               font-extrabold tracking-tight
-              bg-gradient-to-b from-amber-200 via-amber-400 to-yellow-600
+              bg-linear-to-b from-amber-200 via-amber-400 to-yellow-600
               bg-clip-text text-transparent
               drop-shadow-[0_10px_40px_rgba(255,180,80,0.35)]
-              break-words
+              wrap-break-words
             "
           >
             QUANTACON

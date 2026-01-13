@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ws-1",
+    "title": "WebSprint Protocol 1: OasisEvent – The Intelligent Event Organizer",
+    "description": "In the shifting dunes of event planning, success is not measured by scale, but by vision, foresight, and the ability to adapt. Like Fremen navigating the deserts of Arrakis, organizers must master scarce resources, anticipate change, and turn each challenge into a lasting impression. Every event is a dune—shaped by experience, molded by strategy, and alive with movement. Yet, fragmented tools leave schedules adrift, registrations tangled, and engagement fleeting, like spice lost to the winds. Attendees struggle to find their path, missing moments that matter. OasisEvent rises as the AI-powered sietch in this desert of chaos—a sanctuary where organizers sculpt seamless experiences and attendees navigate with clarity. From creation and registration to real-time updates, communication, and post-event insights, the platform transforms scattered elements into harmony. Every event becomes a spice-rich landmark, forged with precision, flow, and mastery, leaving a lasting mark on both organizers and participants.",
+    "objective": "Build an **AI-driven event management platform** that streamlines the entire event lifecycle—from planning and registration to execution and analysis—empowering organizers with intelligent tools and providing attendees with seamless, personalized experiences.",
+    "basicFeatures": [
+      "**Secure Authentication**: Login and signup using email/password or Google authentication with role-based access for organizers and attendees.",
+      "**Event Discovery & Participation**: Users can search, filter, discover events, register, book tickets, and track their participation.",
+      "**AI-Assisted Event Creation**: AI-powered assistance helps organizers generate event titles, descriptions, schedules, and ticket details from minimal input.",
+      "**Attendance Tracking & Coordination**: Track attendee check-ins, event status, announcements, and notifications for smooth real-time coordination.",
+      "**Organizer Dashboard & Insights**: Organizers can view event performance, attendance data, ratings, and feedback to improve future events."
+    ],
+    "advancedFeatures": [
+      "**AI-Driven Event Recommendations**: Suggest relevant events to users based on past participation and interests.",
+      "**Advanced Analytics Dashboard**: Visualize popular events, registration trends, and attendance flow for data-driven decisions.",
+      "**QR-Code Based Check-In**: Enable fast and secure event entry using QR codes with offline sync support.",
+      "**Intelligent Automation**: Automate reminders, follow-ups, email and push notifications, and dynamic ticket pricing.",
+      "**Smart Resource Management**: Manage vendors, speakers, sponsors, access roles, and handle high-traffic situations securely.",
+      "**Smart Networking & Matchmaking**: AI-generated attendee connection suggestions for conferences and meetups based on shared interests and event participation.",
+      "**Post-Event Reflection Engine**: Automatically generated post-event reports highlighting key outcomes, challenges, and improvement areas for future events."
+    ]
+  },
+  {
+    "id": "ws-2",
+    "title": "WebSprint Protocol 2: DuneScript – An AI Journal Across Inner Landscapes",
+    "description": "Build an AI-powered journal inspired by Arrakis, where the mind is seen as a vast, shifting desert and every thought leaves a quiet imprint in the sand. In this inner landscape, users capture reflections through text or voice, while AI remains a silent companion—offering gentle, timely prompts to help navigate changing emotional terrains without intrusion. As days pass, the system begins to trace emotional rhythms and recurring thought patterns, much like dunes slowly shaped by wind, time, and experience. Moments of stillness, turbulence, and growth are mapped and summarized, allowing users to see how their inner world evolves rather than feeling lost within it. By visualizing emotional trends and distilling reflections into meaningful insights, the platform helps users cultivate clarity, resilience, and self-awareness. Guided by the Fremen philosophy of balance, awareness, and intentional living, and grounded in strong privacy and user control, the journal transforms scattered thoughts into a deeper understanding of the self.",
+    "objective": "Develop a **privacy-first AI journaling platform** that helps users track emotions, identify patterns, and gain self-awareness through intelligent reflection tools, mood visualization, and personalized insights—all while maintaining complete user control over their data.",
+    "basicFeatures": [
+      "**Secure Authentication & Profiles**: Secure Google authentication with user profiles, privacy-first encrypted journal storage, and a Dune-inspired interface.",
+      "**Journal Entry Management**: Create, edit, and delete journal entries using text or voice-to-text input with a smart tagging system.",
+      "**AI-Guided Reflection & Mood Tracking**: Daily AI-guided prompts for reflection with mood and emotion tracking visualized like shifting dunes over time.",
+      "**Search, Organize & Offline Support**: Search, filter, and organize entries by date, tags, or mood with offline access and automatic sync.",
+      "**Summaries, Reminders & Export**: Weekly and monthly AI-generated summaries, push reminders, secure backups, and PDF/CSV export support.",
+      "**Social Sharing & Engagement**: Journal entries can be shared via WhatsApp, Facebook, or Instagram, with options for likes and comments while maintaining full user control and privacy."
+    ],
+    "advancedFeatures": [
+      "**AI-Driven Emotional Trend Analysis**: Reveal emotional patterns, behavioral shifts, and long-term introspective insights across journal entries.",
+      "**Personalized Insights & Smart Prompts**: Emotion-aware AI summaries and next-step reflection prompts based on past entries.",
+      "**Contextual Growth Suggestions**: AI-generated suggestions for habits, goals, self-growth actions, and semantic tag recommendations.",
+      "**Advanced Personalization & Sync**: Cross-device sync with seamless cloud backup, custom themes, visual journaling, images, fonts, and color-coded emotions.",
+      "**Predictive Reflection Guidance**: Emotional pattern forecasting, predictive journaling prompts, and integration with health or mindfulness data.",
+      "**Sentiment Alerts & Engagement Tools**: AI sentiment alerts for critical emotions, writing streak gamification, mood heatmaps, and journaling network recommendations."
+    ]
+  },
+  {
+    "id": "ws-3",
+    "title": "WebSprint Protocol 3: House of Knowledge (Peer Learning Platform)",
+    "description": "Design and develop a web-based Peer Learning Platform set in the universe of Arrakis, where survival and growth depend on alliances and shared wisdom. In this platform, users represent members of different Houses, each possessing unique skills (knowledge they can teach) and aspirations (skills they want to learn). Users must be able to create profiles, list their teachable and learnable skills, search for compatible peers, and initiate knowledge exchange requests. The system should support complete session workflows including request approval, rejection, session completion, and peer rating. The platform should foster a trust-driven learning ecosystem, where reputation is built through completed sessions and ratings, enabling users to identify reliable mentors and learners much like forming strategic alliances on Arrakis.",
+    "objective": "Create a **skill-exchange platform** where users can both teach and learn from each other, building reputation through completed sessions and ratings while fostering a community of mutual knowledge sharing.",
+    "basicFeatures": [
+      "**User Profile**: Complete profile with skills to teach and skills to learn",
+      "**Skills Management**: List skills I can teach and skills I want to learn",
+      "**Search System**: Search users by skill, expertise level, and availability",
+      "**Request System**: Send learning requests to potential mentors",
+      "**Session Management**: Accept/Reject request functionality",
+      "**Completion Tracking**: Mark session as completed",
+      "**Rating System**: Give and receive ratings (1–5 stars) with feedback"
+    ],
+    "advancedFeatures": [
+      "**AI Session Summaries**: Automatic generation of session notes and key takeaways",
+      "**Smart Recommendation System**: AI-powered mentor/learner matching based on skills, availability, and teaching style",
+      "**Analytics Dashboard**: Track learning progress, teaching impact, and skill development",
+      "**Admin Panel**: Monitor platform activity, resolve disputes, and manage user reports",
+      "**Scheduling Integration**: Calendar sync and automated scheduling",
+      "**Video Session Support**: Connect google calender and google meet"
+    ]
+  },
+  {
+    "id": "ws-4",
+    "title": "WebSprint Protocol 4: Spice Trials Arena (Online Judge Platform)",
+    "description": "Inspired by the rigorous trials and discipline depicted in Dune, design and implement a web-based Online Judge Platform where users prove their mastery through coding challenges. The platform should allow users to register, browse a categorized problem library, write and execute code in an integrated editor, and submit solutions for evaluation against hidden test cases. Users must be able to track their submission history, acceptance status, and coding streaks. To simulate the guidance of Mentats, the platform should provide AI-powered feedback after submissions, explaining failures and suggesting improvements. Visual dashboards, heatmaps, and performance analytics should help users analyze progress and refine their strategies—mirroring the journey from novice to master on Arrakis.",
+    "objective": "Build a **coding challenge platform** with real-time code execution, AI-powered feedback, and comprehensive progress tracking to help developers improve their problem-solving skills through practice and competition.",
+    "basicFeatures": [
+      "**User & Role Management**: Login/signup with Email & Password, supporting User and Admin roles",
+      "**Problem Library**: Dashboard listing problems with difficulty tags (Easy/Medium/Hard)",
+      "**Problem Detail Page**: Complete problem description, constraints, and sample Input/Output",
+      "**Integrated Coding Workspace**: Browser-based code editor with language selection",
+      "**Run & Submit System**: Execute code and submit for evaluation against test cases",
+      "**Submission History**: Track all submissions with date, problem, and status (Accepted/Wrong Answer)"
+    ],
+    "advancedFeatures": [
+      "**AI-Tutor Feedback**: Get AI-powered explanations for failed submissions and optimization suggestions",
+      "**Visual Activity Heatmap**: Calendar-style visualization showing coding activity patterns",
+      "**Dynamic Streak Counter**: Track consecutive days with accepted submissions",
+      "**Performance Analytics**: Charts showing problem-solving progress by category",
+      "**Social Features**: Discussion sections under problems for community hints and solutions",
+      "**Cross-Platform Dashboard**: Connect coding profiles from other platforms for unified analytics",
+      "**Contest Mode**: Timed coding competitions with leaderboards"
+    ]
+  },
+  {
+    "id": "ws-5",
+    "title": "WebSprint Protocol 5: Arrakis Signal- Voices of the Desert",
+    "description": "On the desert world of Arrakis, even the smallest civic failure—cracked roads, broken water lines, uncollected waste—can quickly disrupt daily life. These issues often remain buried under shifting sands due to delayed reporting, poor coordination, and lack of transparency. The Council of Arrakis seeks a unified digital system where citizens can raise concerns and municipal authorities can respond efficiently. Every complaint is treated as a signal from the desert, tracked from its origin to resolution. Your task is to build Arrakis Signal, a web-based civic complaint management platform that enables seamless reporting, structured resolution workflows, and data-driven governance—restoring balance and accountability across the city.",
+    "objective": "Develop a **civic engagement platform** that enables citizens to report issues, track resolution progress, and hold authorities accountable through transparent workflows and real-time updates.",
+    "basicFeatures": [
+      "**User Registration & Login**: Secure authentication for citizens and municipal officials",
+      "**Complaint Submission**: Report issues with text, location, category, and optional photo upload",
+      "**Ticket Lifecycle Management**: Track complaints through defined resolution stages",
+      "**Municipal Dashboard**: Staff can view, assign, and update complaint status and remarks",
+      "**Search & Filtering**: Filter complaints by type, locality, urgency, or submission date",
+      "**Citizen Portal**: Users can track their complaints and view real-time status updates",
+      "**Role-Based Access**: Separate dashboards for citizens, municipal staff, and administrators",
+      "**Reports & Export**: Generate CSV/PDF reports for periodic analysis and record-keeping"
+    ],
+    "advancedFeatures": [
+      "**Heatmap Visualization**: Interactive map showing complaint density across localities",
+      "**SLA Tracking**: Monitor resolution time and flag complaints nearing or exceeding deadlines",
+      "**Escalation System**: Automatically escalate unresolved issues to higher authorities",
+      "**Public Transparency Portal**: Display live statistics such as resolved vs pending issues",
+      "**Notifications System**: SMS, email, or push alerts for status changes and overdue complaints",
+      "**Priority Tagging**: Mark critical issues (safety, water, health) for faster resolution",
+      "**Analytics Dashboard**: Insights on complaint trends, workload, and department performance"
+    ]
+  },
+  {
+    "id": "ws-6",
+    "title": "WebSprint Protocol 6: Arrakis Market- Trade of the Sands",
+    "description": "In the vast, shifting dunes of Arrakis, technology is both survival and strategy. Communication modules, sensor arrays, power units, and personal computing devices must endure extreme environments—heat, dust, signal interference, and energy constraints. Yet users today face an overwhelming marketplace of electronic gadgets filled with fragmented specifications, unclear performance metrics, and misleading comparisons. Choosing the right device is like navigating the desert without instruments—uncertain, inefficient, and risky. Arrakis Smart Gadget Hub envisions an AI-driven electronics marketplace inspired by the principles of Electronics & Communication Engineering, where every device leaves measurable traces in the sands of innovation. The platform acts as a digital navigator, analysing technical specifications, signal performance, thermal tolerance, power efficiency, and reliability to guide users toward informed decisions. Through intelligent recommendations, predictive reliability analysis, and interactive financial planning, the system transforms raw electronic data into actionable insights. For administrators and sellers, it provides full control over device lifecycles, dealership access, and marketplace operations—ensuring a robust, evolving ecosystem engineered for precision, resilience, and clarity.",
+    "objective": "Create an **electronics comparison and marketplace platform** that helps users make informed purchasing decisions through detailed technical analysis, AI-powered recommendations, and environmental performance forecasting.",
+    "basicFeatures": [
+      "**Device Catalog**: Electronics listing with detailed ECE specifications and user ratings",
+      "**Search & Filters**: Filter by category, chipset, sensors, power requirements, and price range",
+      "**Device Comparison**: Side-by-side comparison of specs, performance metrics, and cost analysis",
+      "**EMI Calculator**: Real-time installment plans and total cost estimation tools",
+      "**User Accounts**: Secure login, personalized profiles, and saved preference management",
+      "**Responsive Design**: Desert-inspired UI optimized for all devices and screen sizes"
+    ],
+    "advancedFeatures": [
+      "**AI Recommendations**: Suggest similar or better devices using specification matching algorithms",
+      "**Admin Dashboard**: Comprehensive management of devices, inventory, sellers, and listings",
+      "**AI Image Listings**: Auto-generate product listings from uploaded device images",
+      "**AI Financial Insights**: Smart EMI optimization and affordability analysis tools",
+      "**Seller Controls**: Admin-managed approvals, access controls, and workflow automation",
+      "**Environmental Analysis**: Predict device reliability under heat, dust, and signal stress conditions",
+      "**Performance Forecasting**: AI-based longevity scoring and efficiency predictions"
+    ]
+  },
+  {
+    "id": "ws-7",
+    "title": "WebSprint Protocol 7: Survive the Desert. Train Like a Fremen",
+    "description": "In the harsh desert world of Arrakis from the Dune universe, survival is not about excess but about discipline, balance, and adaptation. The Fremen survive extreme conditions by training their bodies intelligently—never wasting energy, never overexerting, and always adapting to their environment. Modern fitness applications, however, are overwhelming and unrealistic for beginners. They assume unlimited motivation, equipment, and time. PocketFit Coach reimagines fitness through the philosophy of Dune by offering minimal, adaptive, and achievable workout routines that align with a user's real-life constraints.",
+    "objective": "Build an **adaptive fitness coaching application** that creates personalized, achievable workout plans based on user constraints, tracks progress minimally, and motivates through consistency rather than intensity.",
+    "basicFeatures": [
+      "**Authentication**: Email and password login or dummy login system for basic access control",
+      "**User Profile**: Capture basic details including name, fitness goals, and available daily workout time",
+      "**Fixed Workout Plans**: Predefined workouts based on selected goals using static data",
+      "**Today's Workout Screen**: Daily workout display with completion tracking for progress monitoring",
+      "**Simple Navigation**: Clear flow from login to workout ensuring ease of use and accessibility"
+    ],
+    "advancedFeatures": [
+      "**Google Authentication**: Quick sign-in using Google accounts for improved usability",
+      "**GenAI Workout Generator**: AI generates personalized routines based on goals, time, and location",
+      "**Energy Level Selection**: Adaptive workout intensity based on current user energy levels",
+      "**Progress Tracking**: Workout streaks and total sessions completed to encourage consistency",
+      "**Notifications**: Daily workout reminders and missed session alerts",
+      "**Adaptive Training Logic**: Dynamic difficulty adjustment based on user performance history",
+      "**Basic ML Learning**: Pattern recognition for skipped workouts and adaptive future planning",
+      "**AI Coach**: Conversational or voice-based exercise explanations and motivation",
+      "**Weekly Fitness Report**: Activity summaries, consistency metrics, and calorie estimates",
+      "**Security Enhancements**: Protected routes and token-based authentication systems"
+    ]
+  },
+  {
+    "id": "ws-8",
+    "title": "WebSprint Protocol 8: FamVault",
+    "description": "In the Dune universe, powerful houses survive not only through force but through preparation, records, and secure information. Medical knowledge, lineage records, and emergency planning determine survival. In modern families, important documents and information are scattered across phones, cupboards, and chat applications, making them difficult to access during emergencies. FamVault applies the Dune philosophy of control and preparedness by creating a centralized, digital family locker room that is simple, secure, and accessible.",
+    "objective": "Create a **family information management system** that securely organizes important documents, medical details, and emergency contacts while providing intelligent alerts and easy access during critical situations.",
+    "basicFeatures": [
+      "**Authentication**: Email and password login for family account access control",
+      "**Family Dashboard**: Organized sections for documents, medical details, emergency contacts, and notes",
+      "**Add and View Data**: Simple forms for storing and retrieving family information",
+      "**Local Storage**: Functional system without requiring cloud infrastructure",
+      "**Clean Locker-Style UI**: Folder-based interface for improved usability and organization"
+    ],
+    "advancedFeatures": [
+      "**Google Authentication**: Multiple family member access using secure Google login",
+      "**Family Roles**: Admin and member roles defining view/edit permissions",
+      "**GenAI Document Helper**: AI explanation of uploaded documents in simple language",
+      "**Reminders and Notifications**: Alerts for medicine schedules, bill payments, and important dates",
+      "**Search and Filter**: Quick information retrieval across stored family data",
+      "**AI Auto-Categorization**: Automatic organization of uploaded documents into appropriate sections",
+      "**Smart Expiry Alerts**: Detection and alerts for expiring documents or prescriptions",
+      "**ML-Based Suggestions**: Recommendations for commonly required family documents",
+      "**Emergency Mode**: One-tap access to critical medical and contact information",
+      "**Security Enhancements**: Role-based access control and conceptual encryption for data protection"
+    ]
+  }
+]
