@@ -17,6 +17,16 @@ export default function Home() {
     // Add more professors if needed
   ];
 
+  const superSenior = [
+    {
+      name: "Sachin Kumar Sachin",
+      role: "Senior Mentor & Alumni Advisor (2025 Batch)",
+      instagramLink: "https://www.instagram.com/vsb_sachin/",
+      linkedinLink: "https://www.linkedin.com/in/sachinkr24/",
+      image: "/images/coordinators/sachin.jpeg",
+    },
+  ];
+
   const finalYearCoordinators = [
     {
       name: "Soumya Das",
@@ -134,7 +144,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
           {professors.map((professor, i) => (
             <CoordinatorCard
               key={`prof-${i}`}
@@ -147,6 +157,36 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Super Senior Section */}
+      <section
+        id="super-senior"
+        className="py-16 px-4 md:px-8 max-w-7xl mx-auto relative z-10"
+      >
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground/80">
+            Senior Mentor & Alumni Advisor
+          </h2>
+          <p className="text-muted-foreground mt-2">
+            Bridging generations with expertise and guidance.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
+          {superSenior.map((senior, i) => (
+            <CoordinatorCard
+              key={`senior-${i}`}
+              name={senior.name}
+              role={senior.role}
+              instagramLink={senior.instagramLink}
+              linkedinLink={senior.linkedinLink}
+              image={senior.image}
+            />
+          ))}
+        </div>
+      </section>
+
+      <Separator className="bg-dune-sand/10 max-w-7xl mx-auto" />
 
       {/* Final Year Coordinators Section */}
       <section
