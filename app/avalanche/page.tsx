@@ -20,6 +20,7 @@ import {
   Waves,
   Cog,
   Target,
+  FileText,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -273,6 +274,22 @@ export default function AvalanchePage() {
                       core systems.
                     </p>
                   </div>
+
+                  {/* PDF Button */}
+                  <Button
+                    className="w-full bg-linear-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white h-14 text-lg shadow-lg shadow-gray-500/25"
+                    size="lg"
+                    variant="outline"
+                    asChild
+                  >
+                    <Link
+                      href="https://drive.google.com/file/d/1F0XkTGnA_DbFzPAnaLcREojUrs8CI96F/view?usp=sharing"
+                      target="_blank"
+                    >
+                      <FileText className="mr-3 w-5 h-5" />
+                      Download PS (PDF)
+                    </Link>
+                  </Button>
 
                   <Button
                     className="w-full bg-gradient-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"

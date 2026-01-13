@@ -16,6 +16,7 @@ import {
   Code,
   Target,
   Sparkles,
+  FileText,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -186,7 +187,6 @@ export default function WebsprintPage() {
                 ))}
               </Accordion>
             </section>
-           
           </div>
 
           {/* Sidebar Info - 1/3 width */}
@@ -239,6 +239,23 @@ export default function WebsprintPage() {
                     </p>
                   </div>
 
+                  {/* PDF Button */}
+                  <Button
+                    className="w-full bg-linear-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white h-14 text-lg shadow-lg shadow-gray-500/25"
+                    size="lg"
+                    variant="outline"
+                    asChild
+                  >
+                    <Link
+                      href="https://drive.google.com/file/d/1AnCYTxI2sDXAd3TLVzYkoTbLBp40BhaP/view?usp=sharing"
+                      target="_blank"
+                    >
+                      <FileText className="mr-3 w-5 h-5" />
+                      Download PS (PDF)
+                    </Link>
+                  </Button>
+
+                  {/* Registration Button */}
                   <Button
                     className="w-full bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white h-14 text-lg shadow-lg shadow-blue-500/25"
                     size="lg"
