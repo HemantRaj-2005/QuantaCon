@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar";
+import Image from "next/image";
 import { HeroSection } from "@/components/hero-section";
 import { CoordinatorCard } from "@/components/coordinator-card";
 import { Separator } from "@/components/ui/separator";
@@ -31,8 +32,7 @@ export default function Home() {
       instagramLink: "https://www.instagram.com/vsb_sachin/",
       linkedinLink: "https://www.linkedin.com/in/sachinkr24/",
       image: "/images/coordinators/sachin.jpeg",
-    }
-    
+    },
   ];
 
   const finalYearCoordinators = [
@@ -256,9 +256,19 @@ export default function Home() {
       <footer className="py-12 border-t border-dune-sand/10 bg-muted/20">
         <div className="max-w-7xl mx-auto px-4 text-center space-y-6">
           <div className="space-y-2">
-            <h3 className="text-2xl font-bold text-dune-spice">
-              Electronics Society
-            </h3>
+            <div className="flex flex-col items-center gap-4 mb-4">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-dune-spice/20">
+                <Image
+                  src="/logo.jpg"
+                  alt="Electronics Society Logo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-dune-spice">
+                Electronics Society
+              </h3>
+            </div>
             <p className="text-sm text-muted-foreground">
               Department of Electronics & Communication Engineering
             </p>

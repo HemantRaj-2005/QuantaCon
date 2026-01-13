@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
@@ -34,12 +35,12 @@ export function Navbar() {
 
   React.useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMobileMenuOpen]);
 
@@ -57,7 +58,11 @@ export function Navbar() {
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group" onClick={closeMobileMenu}>
+          <Link
+            href="/"
+            className="flex items-center gap-2 group"
+            onClick={closeMobileMenu}
+          >
             <div className="w-8 h-8 rounded-full bg-dune-spice/20 flex items-center justify-center border border-dune-spice/50 group-hover:bg-dune-spice/40 transition-colors">
               <div className="w-3 h-3 rounded-full bg-dune-spice" />
             </div>
@@ -80,13 +85,29 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" asChild className="hidden md:flex">
-              <Link href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all" target="_blank">
-                Electronics Society
+            <p
+              className="hidden md:flex"
+            >
+              <Link
+                href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all"
+                target="_blank"
+                className="flex items-center gap-4 hover:no-underline"
+              >
+                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-dune-spice/30 shadow-sm">
+                  <Image
+                    src="/logo.jpg"
+                    alt="ES Logo"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                <span className="text-lg font-semibold">
+                  Electronics Society
+                </span>
               </Link>
-            </Button>
-            
-            
+            </p>
+
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
@@ -119,9 +140,9 @@ export function Navbar() {
         <motion.nav
           className="absolute top-24 left-1/2 -translate-x-1/2 w-full max-w-sm px-6"
           initial={{ y: -20, opacity: 0 }}
-          animate={{ 
+          animate={{
             y: isMobileMenuOpen ? 0 : -20,
-            opacity: isMobileMenuOpen ? 1 : 0
+            opacity: isMobileMenuOpen ? 1 : 0,
           }}
           transition={{ duration: 0.3, delay: 0.1 }}
           onClick={(e) => e.stopPropagation()}
@@ -137,17 +158,30 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            
+
             <div className="pt-8 border-t border-border">
-              <Button asChild className="w-full">
-                <Link 
-                  href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all" 
-                  target="_blank"
-                  onClick={closeMobileMenu}
-                >
+              <p
+              className="hidden sm:flex"
+            >
+              <Link
+                href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all"
+                target="_blank"
+                className="flex items-center gap-4 hover:no-underline"
+              >
+                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-dune-spice/30 shadow-sm">
+                  <Image
+                    src="/logo.jpg"
+                    alt="ES Logo"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                <span className="text-lg font-semibold">
                   Electronics Society
-                </Link>
-              </Button>
+                </span>
+              </Link>
+            </p>
             </div>
           </div>
         </motion.nav>
