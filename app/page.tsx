@@ -12,7 +12,8 @@ export default function Home() {
       name: "Dr. Basant Kumar",
       role: "Faculty Advisor",
       instagramLink: "#",
-      linkedinLink: "https://www.linkedin.com/in/basant-kumar-9808476b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedinLink:
+        "https://www.linkedin.com/in/basant-kumar-9808476b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: "/images/coordinators/basantkumar.png",
     },
     // Add more professors if needed
@@ -33,11 +34,13 @@ export default function Home() {
       linkedinLink: "https://www.linkedin.com/in/harishnandre/",
       image: "/images/coordinators/harish.jpeg",
     },
-     {
+    {
       name: "Shreyansh Shah",
       role: "Final Year Coordinator",
-      instagramLink: "https://www.instagram.com/mister__dude?igsh=MWdqdG40enYxc280dA==",
-      linkedinLink: "https://www.linkedin.com/in/shreyans-shah-a2707b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagramLink:
+        "https://www.instagram.com/mister__dude?igsh=MWdqdG40enYxc280dA==",
+      linkedinLink:
+        "https://www.linkedin.com/in/shreyans-shah-a2707b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       image: "/images/coordinators/shreyansh.jpeg",
     },
   ];
@@ -48,67 +51,74 @@ export default function Home() {
       role: "Pre-Final Year Coordinator",
       instagramLink: "https://www.instagram.com/too_lazy_to_raj",
       linkedinLink: "https://www.linkedin.com/in/hemantraj-mnnit/",
-      image: "/images/coordinators/HemantRaj.jpg", 
+      image: "/images/coordinators/HemantRaj.jpg",
     },
     {
       name: "Akash Singh",
       role: "Pre-final year coordinator",
-      instagramLink: "https://www.instagram.com/singh___akash___?utm_source=qr&igsh=ZzNvMGh0dTd0enJm",
+      instagramLink:
+        "https://www.instagram.com/singh___akash___?utm_source=qr&igsh=ZzNvMGh0dTd0enJm",
       linkedinLink: "https://www.linkedin.com/in/akash-singh-7bba5a298/",
-      image: "/images/coordinators/akashsingh.jpeg", 
+      image: "/images/coordinators/AkashSingh.jpeg",
     },
     {
       name: "Harsh Singhal",
       role: "Pre-Final Year Coordinator",
       instagramLink: "https://www.instagram.com/the.harsh.singhal/harsh1611/",
       linkedinLink: "https://www.linkedin.com/in/singhalharsh1611/",
-      image: "/images/coordinators/HarshSinghal.jpeg", 
+      image: "/images/coordinators/HarshSinghal.jpeg",
     },
     {
       name: "Ayush Tiwari",
       role: "Pre-Final Year Coordinator",
       instagramLink: "https://www.instagram.com/ayushtiwari5071/",
-      linkedinLink: "https://www.linkedin.com/in/ayush-tiwari-84a823281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      image: "/images/coordinators/AyushTiwari.jpeg", 
+      linkedinLink:
+        "https://www.linkedin.com/in/ayush-tiwari-84a823281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: "/images/coordinators/AyushTiwari.jpeg",
     },
-    
+
     {
       name: "Kallol Mondal",
       role: "Pre-final year coordinator",
       instagramLink: "#",
       linkedinLink: "https://www.linkedin.com/in/kallol-mondal-814370289",
-      image: "/images/coordinators/kallol.jpeg",  
+      image: "/images/coordinators/kallol.jpeg",
     },
     {
       name: "Aditya Raj Ojha",
       role: "Pre-final year coordinator",
       instagramLink: "https://www.instagram.com/adxtya047",
       linkedinLink: "https://www.linkedin.com/in/aditya-raj-ojha-11b618289/",
-      image: "/images/coordinators/adityaojha.jpeg", 
+      image: "/images/coordinators/adityaojha.jpeg",
     },
     {
       name: "Shudhanshu Bhandana",
       role: "Pre-final year coordinator",
       instagramLink: "#",
       linkedinLink: "https://www.linkedin.com/in/shudhanshu-bhadana-59868526b",
-      image: "/images/coordinators/shudhanshu.jpeg", 
+      image: "/images/coordinators/shudhanshu.jpeg",
     },
     {
       name: "Risabh Saxena",
       role: "Pre-final year coordinator",
       instagramLink: "#",
       linkedinLink: "https://www.linkedin.com/in/rishabhsaxena4136",
-      image: "/images/coordinators/risabh.jpeg", 
+      image: "/images/coordinators/risabh.jpeg",
     },
-    
+    {
+      name: "Asoo Singh",
+      role: "Pre-final year coordinator",
+      instagramLink: "https://www.instagram.com/asoosingh2023/",
+      linkedinLink: "https://www.linkedin.com/in/asoo-singh-73b5b8289",
+      image: "/images/coordinators/asoo.png",
+    },
   ];
 
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-dune-spice selection:text-white transition-colors duration-300">
       <Navbar />
       <HeroSection />
-      <About/>
-
+      <About />
 
       <Separator className="bg-dune-sand/10 max-w-7xl mx-auto" />
 
@@ -143,7 +153,7 @@ export default function Home() {
       {/* Final Year Coordinators Section */}
       <section
         id="final-year"
-        className="py-16 px-4 md:px-8 max-w-7xl mx-auto relative z-10 bg-muted/10 rounded-3xl my-8"
+        className="py-16 px-4 md:px-8 max-w-7xl mx-auto relative z-10"
       >
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground/80">
@@ -154,7 +164,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {finalYearCoordinators.map((coordinator, i) => (
             <CoordinatorCard
               key={`final-${i}`}
@@ -182,7 +192,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {preFinalCoordinators.map((coordinator, i) => (
             <CoordinatorCard
               key={`prefinal-${i}`}
@@ -208,10 +218,16 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center gap-6 text-sm text-muted-foreground/80">
-            <a href="https://www.instagram.com/electronics_society_mnnit" className="hover:text-dune-sand transition-colors">
+            <a
+              href="https://www.instagram.com/electronics_society_mnnit"
+              className="hover:text-dune-sand transition-colors"
+            >
               Instagram
             </a>
-            <a href="https://www.linkedin.com/company/mnnit-electronics-society#" className="hover:text-dune-sand transition-colors">
+            <a
+              href="https://www.linkedin.com/company/mnnit-electronics-society#"
+              className="hover:text-dune-sand transition-colors"
+            >
               LinkedIn
             </a>
             <a
