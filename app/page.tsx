@@ -19,12 +19,20 @@ export default function Home() {
 
   const superSenior = [
     {
-      name: "Sachin Kumar Sachin",
+      name: "Abhijeet Singh",
+      role: "Senior Mentor & Alumni Advisor (2024 Batch)",
+      instagramLink: "https://www.instagram.com/jeet_abhi_2/",
+      linkedinLink: "https://www.linkedin.com/in/jeet-abhi/",
+      image: "/images/coordinators/abhijeet.jpg",
+    },
+    {
+      name: "Sachin Kumar Singh",
       role: "Senior Mentor & Alumni Advisor (2025 Batch)",
       instagramLink: "https://www.instagram.com/vsb_sachin/",
       linkedinLink: "https://www.linkedin.com/in/sachinkr24/",
       image: "/images/coordinators/sachin.jpeg",
-    },
+    }
+    
   ];
 
   const finalYearCoordinators = [
@@ -172,7 +180,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
           {superSenior.map((senior, i) => (
             <CoordinatorCard
               key={`senior-${i}`}
