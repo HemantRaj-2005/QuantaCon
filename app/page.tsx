@@ -30,7 +30,7 @@ export default function Home() {
     {
       name: "Nandre Harish",
       role: "Final Year Coordinator",
-      instagramLink: "https://www.instagram.com/harish_varma__",
+      instagramLink: "https://www.instagram.com/harish_varma____/",
       linkedinLink: "https://www.linkedin.com/in/harishnandre/",
       image: "/images/coordinators/harish.jpeg",
     },
