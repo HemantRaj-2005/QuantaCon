@@ -72,7 +72,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm" asChild className="hidden md:flex">
-            <Link href="https://electronics-society.com" target="_blank">
+            <Link href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all" target="_blank">
               Electronics Society
             </Link>
           </Button>

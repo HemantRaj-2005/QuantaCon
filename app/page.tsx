@@ -9,29 +9,36 @@ import About from "@/components/About";
 export default function Home() {
   const professors = [
     {
-      name: "Dr. Example Professor",
+      name: "Dr. Basant Kumar",
       role: "Faculty Advisor",
       instagramLink: "#",
-      linkedinLink: "#",
-      image: "",
+      linkedinLink: "https://www.linkedin.com/in/basant-kumar-9808476b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: "/images/coordinators/basantkumar.png",
     },
     // Add more professors if needed
   ];
 
   const finalYearCoordinators = [
     {
-      name: "Soumya",
+      name: "Soumya Das",
       role: "Final Year Coordinator",
       instagramLink: "https://www.instagram.com/so.me.ai/",
       linkedinLink: "https://www.linkedin.com/in/soumya-das-nit/",
-      image: "",
+      image: "/images/coordinators/Soumya.jpg",
     },
     {
       name: "Nandre Harish",
       role: "Final Year Coordinator",
       instagramLink: "https://www.instagram.com/harish_varma__",
       linkedinLink: "https://www.linkedin.com/in/harishnandre/",
-      image: "",
+      image: "/images/coordinators/harish.jpeg",
+    },
+     {
+      name: "Shreyansh Shah",
+      role: "Final Year Coordinator",
+      instagramLink: "https://www.instagram.com/mister__dude?igsh=MWdqdG40enYxc280dA==",
+      linkedinLink: "https://www.linkedin.com/in/shreyans-shah-a2707b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: "/images/coordinators/shreyansh.jpeg",
     },
   ];
 
@@ -44,6 +51,13 @@ export default function Home() {
       image: "/images/coordinators/HemantRaj.jpg", 
     },
     {
+      name: "Akash Singh",
+      role: "Pre-final year coordinator",
+      instagramLink: "https://www.instagram.com/singh___akash___?utm_source=qr&igsh=ZzNvMGh0dTd0enJm",
+      linkedinLink: "https://www.linkedin.com/in/akash-singh-7bba5a298/",
+      image: "/images/coordinators/akashsingh.jpeg", 
+    },
+    {
       name: "Harsh Singhal",
       role: "Pre-Final Year Coordinator",
       instagramLink: "https://www.instagram.com/the.harsh.singhal/harsh1611/",
@@ -51,47 +65,42 @@ export default function Home() {
       image: "/images/coordinators/HarshSinghal.jpeg", 
     },
     {
-      name: "Gurney Halleck",
-      role: "Backend Warmaster",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", 
+      name: "Ayush Tiwari",
+      role: "Pre-Final Year Coordinator",
+      instagramLink: "https://www.instagram.com/ayushtiwari5071/",
+      linkedinLink: "https://www.linkedin.com/in/ayush-tiwari-84a823281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: "/images/coordinators/AyushTiwari.jpeg", 
     },
+    
     {
-      name: "Lady Jessica",
-      role: "Reverend Mother of UX",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "",  
-    },
-    {
-      name: "Thufir Hawat",
-      role: "Master of Computation",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", 
-    },
-    {
-      name: "Liet Kynes",
-      role: "Planetologist of Data",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", 
-    },
-    {
-      name: "Alia Atreides",
-      role: "Saint of Syntax",
-      instagramLink: "#",
-      linkedinLink: "#",
-      image: "", 
-    },
-    {
-      name: "Akash Singh",
+      name: "Kallol Mondal",
       role: "Pre-final year coordinator",
-      instagramLink: "https://www.instagram.com/singh_akash_/",
-      linkedinLink: "https://www.linkedin.com/in/akash-singh-7bba5a298/",
-      image: "/images/coordinators/AkashSingh.jpeg", 
+      instagramLink: "#",
+      linkedinLink: "https://www.linkedin.com/in/kallol-mondal-814370289",
+      image: "/images/coordinators/kallol.jpeg",  
     },
+    {
+      name: "Aditya Raj Ojha",
+      role: "Pre-final year coordinator",
+      instagramLink: "https://www.instagram.com/adxtya047",
+      linkedinLink: "https://www.linkedin.com/in/aditya-raj-ojha-11b618289/",
+      image: "/images/coordinators/adityaojha.jpeg", 
+    },
+    {
+      name: "Shudhanshu Bhandana",
+      role: "Pre-final year coordinator",
+      instagramLink: "#",
+      linkedinLink: "https://www.linkedin.com/in/shudhanshu-bhadana-59868526b",
+      image: "/images/coordinators/shudhanshu.jpeg", 
+    },
+    {
+      name: "Risabh Saxena",
+      role: "Pre-final year coordinator",
+      instagramLink: "#",
+      linkedinLink: "https://www.linkedin.com/in/rishabhsaxena4136",
+      image: "/images/coordinators/risabh.jpeg", 
+    },
+    
   ];
 
   return (

@@ -37,7 +37,7 @@ export function CoordinatorCard({
               src={image}
               alt={`${name}'s profile`}
               width={96}
-              height={96}
+              height={125}
               className="w-full h-full object-cover"
             />
           ) : (
