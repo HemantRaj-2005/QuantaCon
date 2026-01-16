@@ -52,7 +52,7 @@ export function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled
             ? "py-4 bg-background/60 backdrop-blur-md border-b border-dune-sand/10 shadow-sm"
-            : "py-6 bg-transparent"
+            : "py-6 bg-transparent",
         )}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -86,9 +86,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <p
-              className="hidden md:flex"
-            >
+            <div className="hidden md:flex">
               <Link
                 href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all"
                 target="_blank"
@@ -107,7 +105,7 @@ export function Navbar() {
                   Electronics Society
                 </span>
               </Link>
-            </p>
+            </div>
 
             {/* Mobile Menu Button */}
             <Button
@@ -130,7 +128,7 @@ export function Navbar() {
         className={cn(
           "fixed inset-0 z-40 md:hidden",
           "bg-background/95 backdrop-blur-lg",
-          isMobileMenuOpen ? "pointer-events-auto" : "pointer-events-none"
+          isMobileMenuOpen ? "pointer-events-auto" : "pointer-events-none",
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: isMobileMenuOpen ? 1 : 0 }}
@@ -161,28 +159,26 @@ export function Navbar() {
             ))}
 
             <div className="pt-8 border-t border-border">
-              <p
-              className="hidden sm:flex"
-            >
-              <Link
-                href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all"
-                target="_blank"
-                className="flex items-center gap-4 hover:no-underline"
-              >
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-dune-spice/30 shadow-sm">
-                  <Image
-                    src="/logo.jpg"
-                    alt="ES Logo"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                <span className="text-lg font-semibold">
-                  Electronics Society
-                </span>
-              </Link>
-            </p>
+              <div className="hidden sm:flex">
+                <Link
+                  href="https://www.linkedin.com/company/mnnit-electronics-society/posts/?feedView=all"
+                  target="_blank"
+                  className="flex items-center gap-4 hover:no-underline"
+                >
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-dune-spice/30 shadow-sm">
+                    <Image
+                      src="/logo.jpg"
+                      alt="ES Logo"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                  <span className="text-lg font-semibold">
+                    Electronics Society
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         </motion.nav>
