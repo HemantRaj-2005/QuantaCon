@@ -293,14 +293,10 @@ export default function AvalanchePage() {
                   <Button
                     className="w-full bg-linear-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"
                     size="lg"
-                    asChild
+                    onClick={() => alert("Registration Closed")}
                   >
-                    <Link
-                      href="https://forms.gle/11tghw9o4j6JvKKD6"
-                      target="_blank"
-                    >
+                    
                       Register Now <ArrowRight className="ml-3 w-5 h-5" />
-                    </Link>
                   </Button>
 
                   {/* Submit Abstract Button */}
@@ -309,7 +305,7 @@ export default function AvalanchePage() {
                     size="lg"
                     asChild
                   >
-                    <Link href="#" target="_blank">
+                    <Link href="https://forms.gle/BoXiq5kAyubzxNp48" target="_blank">
                       Submit Abstract <ArrowRight className="ml-3 w-5 h-5" />
                     </Link>
                   </Button>
@@ -317,7 +313,7 @@ export default function AvalanchePage() {
                   <div className="text-center p-3 rounded-lg bg-dune-spice/10 border border-dune-spice/20">
                     <p className="text-sm font-medium">
                       ⏰ Registration closes:{" "}
-                      <span className="text-dune-spice">14th Jan, 2026</span>
+                      <span className="text-dune-spice">16th Jan, 2026</span>
                     </p>
                   </div>
                 </div>

@@ -259,14 +259,9 @@ export default function WebsprintPage() {
                   <Button
                     className="w-full bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white h-14 text-lg shadow-lg shadow-blue-500/25"
                     size="lg"
-                    asChild
+                    onClick={() => alert("Registration Closed")}
                   >
-                    <Link
-                      href="https://forms.gle/11tghw9o4j6JvKKD6"
-                      target="_blank"
-                    >
-                      Register Now <ArrowRight className="ml-3 w-5 h-5" />
-                    </Link>
+                    Register Now <ArrowRight className="ml-3 w-5 h-5" />
                   </Button>
 
                   {/* Submit Abstract Button */}
