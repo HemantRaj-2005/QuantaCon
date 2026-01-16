@@ -269,10 +269,24 @@ export default function WebsprintPage() {
                     </Link>
                   </Button>
 
+                  {/* Submit Abstract Button */}
+                  <Button
+                    className="w-full bg-linear-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white h-14 text-lg shadow-lg shadow-indigo-500/25"
+                    size="lg"
+                    asChild
+                  > 
+                    <Link
+                      href="https://forms.gle/AcdJU6rn85HFPLB36"
+                      target="_blank"
+                    >
+                      Submit Abstract <ArrowRight className="ml-3 w-5 h-5" />
+                    </Link>
+                  </Button>
+
                   <div className="text-center p-3 rounded-lg bg-blue-500/10 border border-blue-500/20">
                     <p className="text-sm font-medium">
                       ⏰ Registration closes:{" "}
-                      <span className="text-blue-500">14th Jan, 2026</span>
+                      <span className="text-blue-500">16th Jan, 2026</span>
                     </p>
                   </div>
                 </div>

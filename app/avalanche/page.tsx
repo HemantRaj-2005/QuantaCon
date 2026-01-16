@@ -223,7 +223,6 @@ export default function AvalanchePage() {
                 ))}
               </Accordion>
             </section>
-
           </div>
 
           {/* Sidebar Info - 1/3 width */}
@@ -290,6 +289,7 @@ export default function AvalanchePage() {
                     </Link>
                   </Button>
 
+                  {/* Registration Button */}
                   <Button
                     className="w-full bg-linear-to-r from-dune-spice to-dune-spice/90 hover:from-dune-spice/90 hover:to-dune-spice text-white h-14 text-lg shadow-lg shadow-dune-spice/25"
                     size="lg"
@@ -300,6 +300,17 @@ export default function AvalanchePage() {
                       target="_blank"
                     >
                       Register Now <ArrowRight className="ml-3 w-5 h-5" />
+                    </Link>
+                  </Button>
+
+                  {/* Submit Abstract Button */}
+                  <Button
+                    className="w-full bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white h-14 text-lg shadow-lg shadow-amber-500/25"
+                    size="lg"
+                    asChild
+                  >
+                    <Link href="#" target="_blank">
+                      Submit Abstract <ArrowRight className="ml-3 w-5 h-5" />
                     </Link>
                   </Button>
 

@@ -6,6 +6,7 @@ import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -22,6 +23,7 @@ export function Navbar() {
     { href: "/avalanche", label: "Avalanche" },
     { href: "/websprint", label: "WebSprint" },
     { href: "/timeline", label: "Timeline" },
+    { href: "/notification", label: "Notification" },
   ];
 
   const toggleMobileMenu = () => {
@@ -108,7 +110,7 @@ export function Navbar() {
             </p>
 
             {/* Mobile Menu Button */}
-            <button
+            <Button
               onClick={toggleMobileMenu}
               className="md:hidden flex items-center justify-center w-10 h-10 rounded-md hover:bg-accent transition-colors"
               aria-label="Toggle menu"
@@ -118,7 +120,7 @@ export function Navbar() {
               ) : (
                 <Menu className="h-5 w-5" />
               )}
-            </button>
+            </Button>
           </div>
         </div>
       </motion.header>
